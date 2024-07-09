@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Highlights from './components/Highlights'
@@ -8,7 +7,7 @@ import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 const App = () => {
   return (
-   <main >
+   <main className='overflow-hidden'>
     <Navbar />
     <Hero/> 
     <Highlights/>
