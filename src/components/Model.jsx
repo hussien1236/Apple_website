@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import { useState} from 'react'
 import { all_colorsImg } from '../utils'
 import {models} from '../constants'
-import { animateBottomPart, animateWithGsap } from '../utils/animation'
+import { animateWithGsap } from '../utils/animation'
 const Model = () => {
     useGSAP(()=>{
  //   animateBottomPart('#section','#bottom');
