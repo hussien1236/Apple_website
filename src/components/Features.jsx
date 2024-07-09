@@ -22,7 +22,7 @@ const Features = () => {
             {scrub:5.5}
         )
         animateWithGsap('.g_text',
-            {y:0, opacity:1, ease:'power2.inOut',duration:1}
+            {y:0, opacity:1, stagger: 0.2,}
         )
       },[])
     return (

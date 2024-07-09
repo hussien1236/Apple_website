@@ -16,13 +16,13 @@ const HowItWorks = () => {
     duration:2,
     ease:'power2.inOut'
    })
+
   animateWithGsap('.g_fadeIn',{
     opacity:1,
-    y:1,
-    duration: 1,
-    ease:'power2.inOut'
+    y:0,
+    stagger: 0.2,
   })
-  },[])
+},[])
   return (
     <section className='common-padding px-10'>
         <div className='screen-max-width'>
