@@ -14,15 +14,14 @@ const HowItWorks = () => {
     opacity:0,
     scale:2,
     duration:2,
-    ease:'power2.inOut'
+    ease:window.innerWidth>760?'power2.inOut':'none'
    })
 
   animateWithGsap('.g_fadeIn',{
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    ease: 'power2.inOut'
-  })
+    opacity:1,
+    y:0,
+    stagger: 0.2,
+  },{scrub:window.innerWidth<760?0:2})
 },[])
   return (
     <section className='common-padding px-10'>
