@@ -22,9 +22,9 @@ const Features = () => {
         )
         animateWithGsap('.g_text',
             {y:0, opacity:1,
-                 stagger: 0.2,
+                 stagger: 0.1,
             },
-            {scrub:window.innerWidth<760?2 : 0}
+        window.innerWidth<760?{scrub:1}:{}
 )},[])
     return (
     <section className='h-full common-padding bg-zinc

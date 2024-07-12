@@ -20,8 +20,8 @@ const HowItWorks = () => {
   animateWithGsap('.g_fadeIn',{
     opacity:1,
     y:0,
-    stagger: 0.2,
-  },{scrub:window.innerWidth<760?0:2})
+    stagger: 0.1,
+  },window.innerWidth<760?{scrub:1}:{})
 },[])
   return (
     <section className='common-padding px-10'>
