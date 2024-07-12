@@ -18,12 +18,14 @@ const Features = () => {
         })
         animateWithGsap('#feature_title', {y:0, opacity:1}),
         animateWithGsap('.g_grow', 
-            {scale:1, opacity:1, ease:'power1'},
-            {scrub:5.5}
+            {scale:1, opacity:1, ease:'power1'}
         )
         animateWithGsap('.g_text',
-            {y:0, opacity:1, stagger: 0.2,}
-        )
+            {y:0, opacity:1,
+                 stagger: 0.2,
+                },
+            {scrub:1}    
+)
       },[])
     return (
     <section className='h-full common-padding bg-zinc

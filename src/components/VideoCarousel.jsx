@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import {hightlightsSlides} from '../constants'
 import gsap from 'gsap';
 import { replayImg,playImg, pauseImg } from '../utils';
@@ -101,7 +101,6 @@ const VideoCarousel = () => {
   const handleProcess = (type, i) => {
     switch (type){
       case 'video-end':
-        console.log("videoId is equal to :"+videoId);  
       setVideo((prevVideo) => ({...prevVideo,isEnd:true,videoId:i+1}));    
         break;
       case 'video-last' :
