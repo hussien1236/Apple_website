@@ -7,9 +7,11 @@ export const animateWithGsap = (target, animationProps,scrollProps)=>{
         scrollTrigger:{
         trigger:target,        
         toggleActions:'restart reverse restart reverse',
-        start: "top bottom", // start when the top of the element reaches the bottom of the viewport
-        end: "bottom top", 
-        ...scrollProps
+        start: "top 85%",
+ //       end: "bottom top", 
+        ...scrollProps,      
+        
         }
     })
+    
 }

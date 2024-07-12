@@ -34,6 +34,7 @@ const Footer = () => {
                     {link} {' '}
                     {i !== footerLinks.length-1 && 
                     <span className='sm:mx-2 mx:1'> | </span>}
+                    {' '}
                 </p>
               ))}
             </div>
